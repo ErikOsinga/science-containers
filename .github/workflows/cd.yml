@@ -38,7 +38,7 @@ jobs:
     if : ${{ needs.releaseer.outputs.release_created }}
     strategy:
       matrix:
-        python-version: ['3.9', '3.10', '3.11', '3.12']
+        python-version: ['3.11']
     steps:
       -
         name: Checkout Repository
@@ -53,7 +53,7 @@ jobs:
           echo "Release Tag: ${{ needs.releaseer.outputs.tag_name }}"
           REGISTRY="images.canfar.net/"
           echo REGISTRY=${REGISTRY} >> $GITHUB_OUTPUT
-          IMAGE="canfar/base"
+          IMAGE="cirada/possumpipelineheadless"
           echo IMAGE=${IMAGE} >> $GITHUB_OUTPUT
           FLAVOR=${{ matrix.python-version }}
           echo FLAVOR=${FLAVOR} >> $GITHUB_OUTPUT
@@ -79,8 +79,8 @@ jobs:
         uses: docker/build-push-action@v3
         id: build-push-production
         with:
-          context: science-containers/Dockerfiles/base
-          file: science-containers/Dockerfiles/base/Dockerfile
+          context: science-containers/Dockerfiles/possum_headless
+          file: science-containers/Dockerfiles/possum_headless/Dockerfile
           platforms: linux/amd64
           build-args:
             PYTHON_VERSION=${{ matrix.python-version }}
