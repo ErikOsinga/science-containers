@@ -1,6 +1,17 @@
 # CANFAR Science Containers
 
 This is the repository for docker containers that are run on the [CANFAR Science Platform](https://www.canfar.net)
+It is based on the original repository here: https://github.com/opencadc/science-containers/
+
+The focus of this repository is to create Docker containers that will run the POSSUM/VLASS pipelines. 
+
+
+
+
+
+
+
+
 
 The official CANFAR User Documentation can be found at: [https://www.opencadc.org/science-containers.git/](https://www.opencadc.org/science-containers/)
 
