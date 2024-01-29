@@ -1,4 +1,4 @@
-# CANFAR Science Containers
+# CANFAR Science Containers for POSSUM/VLASS
 
 This is the repository for docker containers that are run on the [CANFAR Science Platform](https://www.canfar.net)
 It is based on the original repository here: https://github.com/opencadc/science-containers/
