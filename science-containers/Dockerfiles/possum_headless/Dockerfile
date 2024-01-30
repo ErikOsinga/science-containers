@@ -58,7 +58,8 @@ RUN mamba install numpy \
 RUN pip install RM-Tools \
 	RMTable \
 	PolSpectra \
-	gspread \	
+	gspread \
+        PyMultiNest \
 	--no-cache-dir
 	
 # dont get jupyter in the headless version 
