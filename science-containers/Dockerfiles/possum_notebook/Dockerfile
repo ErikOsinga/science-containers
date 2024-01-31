@@ -8,13 +8,15 @@ WORKDIR /tmp
 
 # Install packages
 RUN apt-get update --yes --quiet --fix-missing \
-    && apt-get install --yes --quiet acl \
+    && apt-get install --yes --quiet \
         bzip2 \
         curl \
         git \
         locales \
         nano \
         rsync \
+        sssd \
+        acl \
         openssh-client \
         sudo \
         vim \
@@ -52,7 +54,8 @@ RUN mamba install numpy \
 	astropy \
 	configparser \
 	healpy \
-	tqdm
+	tqdm \
+	progressbar2 
 	
 # Install other python packages with pip
 RUN pip install RM-Tools \
@@ -60,7 +63,7 @@ RUN pip install RM-Tools \
 	PolSpectra \
 	gspread \
 	--no-cache-dir
-
+	
 # Get PyMultiNest dependencies
 RUN apt-get update --yes --quiet --fix-missing \
     && apt-get install --yes --quiet \
@@ -86,11 +89,10 @@ ENV LD_LIBRARY_PATH=/tmp/MultiNest/lib:$LD_LIBRARY_PATH
 
 # Install PyMultiNest
 RUN pip install pymultinest
-
 	
-# dont get jupyter in the headless version 
-### RUN mamba install jupyterlab
+# Get jupyter in this notebook version 
+RUN mamba install jupyterlab
 
 # Finally get the POSSUM pipeline into the Docker
-## git clone doesnt work but this puts the pipeline in the WORKDIR /tmp
+## git clone doesnt work for private repos but this puts the pipeline in the WORKDIR
 ADD ./POSSUM_Polarimetry_Pipeline ./POSSUM_Polarimetry_Pipeline
