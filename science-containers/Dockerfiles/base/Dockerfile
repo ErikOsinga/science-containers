@@ -8,6 +8,7 @@ WORKDIR /tmp
 
 RUN apt-get update --yes --quiet --fix-missing \
     && apt-get install --yes --quiet acl \
+        sssd \
         bzip2 \
         curl \
         git \
