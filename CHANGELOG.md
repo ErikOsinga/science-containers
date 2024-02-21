@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/ErikOsinga/science-containers/compare/v0.1.0...v0.2.0) (2024-02-21)
+
+
+### Features
+
+* **core:** remove POSSUM pipeline code copy ([92c10f4](https://github.com/ErikOsinga/science-containers/commit/92c10f4e22557a46591e059d40332658fa4a03fe))
+
 ## 0.1.0 (2024-02-21)
 
 
