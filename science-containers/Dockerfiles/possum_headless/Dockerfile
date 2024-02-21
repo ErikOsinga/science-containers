@@ -93,4 +93,5 @@ RUN pip install pymultinest
 
 # Finally get the POSSUM pipeline into the Docker
 ## git clone doesnt work but this puts the pipeline in the WORKDIR /tmp
-ADD ./POSSUM_Polarimetry_Pipeline ./POSSUM_Polarimetry_Pipeline
+# TODO
+#ADD ./POSSUM_Polarimetry_Pipeline ./POSSUM_Polarimetry_Pipeline
