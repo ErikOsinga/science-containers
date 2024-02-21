@@ -97,5 +97,4 @@ RUN mamba install jupyterlab
 ## git clone doesnt work for private repos but this puts the pipeline in the WORKDIR
 
 ## TODO: can we git clone the pipeline via github actions?
-
 #ADD ./POSSUM_Polarimetry_Pipeline ./POSSUM_Polarimetry_Pipeline
