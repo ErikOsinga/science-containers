@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/ErikOsinga/science-containers/compare/v0.3.0...v0.4.0) (2024-02-21)
+
+
+### Features
+
+* **core:** also push notebook images ([214cdfc](https://github.com/ErikOsinga/science-containers/commit/214cdfc71ad4959df3292877e83d2c49c8a0719a))
+
 ## [0.3.0](https://github.com/ErikOsinga/science-containers/compare/v0.2.0...v0.3.0) (2024-02-21)
 
 
