@@ -62,6 +62,8 @@ RUN pip install RM-Tools \
 	RMTable \
 	PolSpectra \
 	gspread \
+        psrecord \
+        yappi \
 	--no-cache-dir
 	
 # Get PyMultiNest dependencies
