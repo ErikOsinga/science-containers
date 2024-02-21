@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/ErikOsinga/science-containers/compare/v0.4.0...v0.4.1) (2024-02-21)
+
+
+### Bug Fixes
+
+* **core:** add gprof2dot ([db32043](https://github.com/ErikOsinga/science-containers/commit/db320436f9fa89ef0a8c45fb7cf0dd9ec831809e))
+
 ## [0.4.0](https://github.com/ErikOsinga/science-containers/compare/v0.3.0...v0.4.0) (2024-02-21)
 
 
