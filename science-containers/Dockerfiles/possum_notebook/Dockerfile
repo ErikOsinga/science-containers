@@ -95,4 +95,7 @@ RUN mamba install jupyterlab
 
 # Finally get the POSSUM pipeline into the Docker
 ## git clone doesnt work for private repos but this puts the pipeline in the WORKDIR
-ADD ./POSSUM_Polarimetry_Pipeline ./POSSUM_Polarimetry_Pipeline
+
+## TODO: can we git clone the pipeline via github actions?
+
+#ADD ./POSSUM_Polarimetry_Pipeline ./POSSUM_Polarimetry_Pipeline
