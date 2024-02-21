@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/ErikOsinga/science-containers/compare/v0.2.0...v0.3.0) (2024-02-21)
+
+
+### Features
+
+* **core:** install yappi and psrecord ([be51367](https://github.com/ErikOsinga/science-containers/commit/be51367c6cc1ca50bbb559cd8a5c0428a5f09bdb))
+
 ## [0.2.0](https://github.com/ErikOsinga/science-containers/compare/v0.1.0...v0.2.0) (2024-02-21)
 
 
