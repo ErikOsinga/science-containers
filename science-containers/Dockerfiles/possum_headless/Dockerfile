@@ -61,6 +61,7 @@ RUN pip install RM-Tools \
 	gspread \
         psrecord \
         yappi \
+        gprof2dot \
 	--no-cache-dir
 
 # Get PyMultiNest dependencies
