@@ -35,12 +35,6 @@ The workflow process is as follows:
 
 Contributions to this repository are welcome! Please feel free to submit issues or pull requests for bug fixes, new features, or improvements.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-
-
 
 
 ## Additional resources
