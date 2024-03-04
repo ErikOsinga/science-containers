@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.0](https://github.com/ErikOsinga/science-containers/compare/v0.4.1...v0.5.0) (2024-03-04)
+
+
+### Features
+
+* **base:** add rclone ([3b82ecf](https://github.com/ErikOsinga/science-containers/commit/3b82ecf45035492727f79c5d2f147e50f06d4a6a))
+
 ## [0.4.1](https://github.com/ErikOsinga/science-containers/compare/v0.4.0...v0.4.1) (2024-02-21)
 
 
