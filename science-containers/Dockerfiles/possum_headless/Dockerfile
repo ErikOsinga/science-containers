@@ -20,6 +20,7 @@ RUN apt-get update --yes --quiet --fix-missing \
         vim \
         wget \
         zsh \
+        unzip \
         tcsh \
     && apt-get clean --yes \
     && apt-get autoremove --purge --quiet --yes \

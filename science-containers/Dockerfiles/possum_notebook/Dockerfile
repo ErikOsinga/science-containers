@@ -20,6 +20,7 @@ RUN apt-get update --yes --quiet --fix-missing \
         openssh-client \
         sudo \
         vim \
+        unzip \
         wget \
         zsh \
         tcsh \
