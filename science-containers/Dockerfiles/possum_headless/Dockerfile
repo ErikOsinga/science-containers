@@ -25,6 +25,9 @@ RUN apt-get update --yes --quiet --fix-missing \
     && apt-get autoremove --purge --quiet --yes \
     && rm -rf /var/lib/apt/lists/* /var/tmp/* 
 
+# install rclone 
+RUN sudo -v ; curl https://rclone.org/install.sh | sudo bash
+
 ADD nsswitch.conf /etc/
 
 # Mircomamba Installation
