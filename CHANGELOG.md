@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/ErikOsinga/science-containers/compare/v0.5.0...v0.5.1) (2024-03-04)
+
+
+### Bug Fixes
+
+* **base:** rclone requires unzip ([4f8e87c](https://github.com/ErikOsinga/science-containers/commit/4f8e87c6e58cdc971cd6f0be760a6ccacdd2c8b3))
+
 ## [0.5.0](https://github.com/ErikOsinga/science-containers/compare/v0.4.1...v0.5.0) (2024-03-04)
 
 
