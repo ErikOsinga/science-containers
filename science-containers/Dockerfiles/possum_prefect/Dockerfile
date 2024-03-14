@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM prefecthq/prefect:2.16.3-python3.11-kubernetes
 
 LABEL maintainer="Erik Osinga <erik.osinga@utoronto.ca>"
 
@@ -31,31 +31,14 @@ RUN sudo -v ; curl https://rclone.org/install.sh | sudo bash
 
 ADD nsswitch.conf /etc/
 
-# Mircomamba Installation
-ARG PYTHON_VERSION=3.11
-
-ENV CONDA_DIR=/opt/conda
-ENV PATH="${CONDA_DIR}/bin:${PATH}"
-
-COPY condarc "${CONDA_DIR}/.condarc"
-RUN set -x \
-    && curl -Ls https://micromamba.snakepit.net/api/micromamba/linux-64/latest | tar -xvj bin/micromamba \
-    && ./bin/micromamba install \
-        --root-prefix="${CONDA_DIR}" \
-        --prefix="${CONDA_DIR}" \
-        --yes \
-        python=${PYTHON_VERSION} mamba
-
-# conda profile scripts by default
-RUN ln -s ${CONDA_DIR}/etc/profile.d/conda.sh /etc/profile.d/conda.sh
-
-# install python packages
-RUN mamba install numpy \
+# install python packages (used to be mamba install)
+RUN pip install numpy \
 	astropy \
 	matplotlib \
 	astropy \
 	configparser \
 	healpy \
+        prefect \
 	tqdm
 	
 # Install other python packages with pip
@@ -94,11 +77,5 @@ ENV LD_LIBRARY_PATH=/tmp/MultiNest/lib:$LD_LIBRARY_PATH
 # Install PyMultiNest
 RUN pip install pymultinest
 
-	
 # dont get jupyter in the headless version 
 ### RUN mamba install jupyterlab
-
-# Finally get the POSSUM pipeline into the Docker
-## git clone doesnt work but this puts the pipeline in the WORKDIR /tmp
-# TODO
-#ADD ./POSSUM_Polarimetry_Pipeline ./POSSUM_Polarimetry_Pipeline
