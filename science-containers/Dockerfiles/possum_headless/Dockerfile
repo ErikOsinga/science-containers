@@ -56,6 +56,7 @@ RUN mamba install numpy \
 	astropy \
 	configparser \
 	healpy \
+        prefect \
 	tqdm
 	
 # Install other python packages with pip
