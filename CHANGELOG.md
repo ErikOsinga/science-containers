@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.0](https://github.com/ErikOsinga/science-containers/compare/v0.5.1...v0.6.0) (2024-03-14)
+
+
+### Features
+
+* **base:** try install prefect in headless docker container ([d25b7c5](https://github.com/ErikOsinga/science-containers/commit/d25b7c5c811adf6d69485d9c35d99bddc9a77509))
+
 ## [0.5.1](https://github.com/ErikOsinga/science-containers/compare/v0.5.0...v0.5.1) (2024-03-04)
 
 
