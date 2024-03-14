@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/ErikOsinga/science-containers/compare/v0.6.0...v0.7.0) (2024-03-14)
+
+
+### Features
+
+* **base:** implement prefect in separate container ([73c1005](https://github.com/ErikOsinga/science-containers/commit/73c1005186e62c47f38ebdd60df6d9eea7d6ad02))
+
 ## [0.6.0](https://github.com/ErikOsinga/science-containers/compare/v0.5.1...v0.6.0) (2024-03-14)
 
 
