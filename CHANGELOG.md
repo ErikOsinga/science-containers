@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.8.0](https://github.com/ErikOsinga/science-containers/compare/v0.7.0...v0.8.0) (2024-03-15)
+
+
+### Features
+
+* **base:** add sssd to prefect container ([3894c4f](https://github.com/ErikOsinga/science-containers/commit/3894c4f4eaf3995204825705f7b9a75f2762ea27))
+
 ## [0.7.0](https://github.com/ErikOsinga/science-containers/compare/v0.6.0...v0.7.0) (2024-03-14)
 
 
