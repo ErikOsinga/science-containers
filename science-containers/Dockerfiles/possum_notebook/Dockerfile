@@ -23,6 +23,7 @@ RUN apt-get update --yes --quiet --fix-missing \
         unzip \
         wget \
         zsh \
+        sssd \
         tcsh \
     && apt-get clean --yes \
     && apt-get autoremove --purge --quiet --yes \
