@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.1](https://github.com/ErikOsinga/science-containers/compare/v0.9.0...v0.9.1) (2024-03-26)
+
+
+### Bug Fixes
+
+* **base:** CANFAR requires sssd ([ae21bf6](https://github.com/ErikOsinga/science-containers/commit/ae21bf6f982f9efb0ad34868f4571f358ca99365))
+
 ## [0.9.0](https://github.com/ErikOsinga/science-containers/compare/v0.8.0...v0.9.0) (2024-03-20)
 
 
