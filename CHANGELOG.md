@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.2](https://github.com/ErikOsinga/science-containers/compare/v0.10.1...v0.10.2) (2024-05-03)
+
+
+### Bug Fixes
+
+* **base:** Moving to py3.12 ([7d5dd5e](https://github.com/ErikOsinga/science-containers/commit/7d5dd5e782944585d86589a9a5419fafffade51f))
+
 ## [0.10.1](https://github.com/ErikOsinga/science-containers/compare/v0.10.0...v0.10.1) (2024-05-03)
 
 
