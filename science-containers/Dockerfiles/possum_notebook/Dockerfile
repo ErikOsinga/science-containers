@@ -101,10 +101,14 @@ RUN pip install pymultinest
 # Get jupyter in this notebook version 
 RUN mamba install jupyterlab
 
-# Finally get the POSSUM pipeline into the Docker
-## git clone doesnt work for private repos but this puts the pipeline in the WORKDIR
+# Install POSSUM2CAOM2
+ARG OPENCADC_BRANCH=main
+ARG OPENCADC_REPO=opencadc
+RUN git clone https://github.com/${OPENCADC_REPO}/caom2tools.git && \
+    cd caom2tools && \
+    git checkout ${OPENCADC_BRANCH} && \
+    pip install ./caom2utils && \
+    cd ..
 
-## TODO: can we git clone the pipeline via github actions?
-
-
-#ADD ./POSSUM_Polarimetry_Pipeline ./POSSUM_Polarimetry_Pipeline
+RUN pip install git+https://github.com/${OPENCADC_REPO}/caom2pipe@${OPENCADC_BRANCH}#egg=caom2pipe
+RUN pip install git+https://github.com/${OPENCADC_REPO}/possum2caom2@${OPENCADC_BRANCH}#egg=possum2caom2
