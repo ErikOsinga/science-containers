@@ -49,7 +49,7 @@ jobs:
         shell: bash
     strategy:
       matrix:
-        python-version: [ "3.11" ]
+        python-version: [ "3.12" ]
         os : [ "ubuntu-latest" ]
     steps:
     -
