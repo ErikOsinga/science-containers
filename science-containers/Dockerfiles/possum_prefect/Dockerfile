@@ -79,5 +79,17 @@ ENV LD_LIBRARY_PATH=/tmp/MultiNest/lib:$LD_LIBRARY_PATH
 # Install PyMultiNest
 RUN pip install pymultinest
 
+# Install POSSUM2CAOM2
+ARG OPENCADC_BRANCH=main
+ARG OPENCADC_REPO=opencadc
+RUN git clone https://github.com/${OPENCADC_REPO}/caom2tools.git && \
+    cd caom2tools && \
+    git checkout ${OPENCADC_BRANCH} && \
+    pip install ./caom2utils && \
+    cd ..
+
+RUN pip install git+https://github.com/${OPENCADC_REPO}/caom2pipe@${OPENCADC_BRANCH}#egg=caom2pipe
+RUN pip install git+https://github.com/${OPENCADC_REPO}/possum2caom2@${OPENCADC_BRANCH}#egg=possum2caom2
+
 # dont get jupyter in the headless version 
 ### RUN mamba install jupyterlab
