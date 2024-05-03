@@ -24,6 +24,8 @@ RUN apt-get update --yes --quiet --fix-missing \
         sssd \
         tcsh \
         tk \
+        busybox \
+        libcfitsio-bin \
     && apt-get clean --yes \
     && apt-get autoremove --purge --quiet --yes \
     && rm -rf /var/lib/apt/lists/* /var/tmp/* 
@@ -51,6 +53,7 @@ RUN pip install RM-Tools \
         psrecord \
         yappi \
         gprof2dot \
+        mock \
 	--no-cache-dir
 
 # Get PyMultiNest dependencies
