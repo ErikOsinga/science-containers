@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.0](https://github.com/ErikOsinga/science-containers/compare/v0.9.1...v0.10.0) (2024-05-03)
+
+
+### Features
+
+* **base:** remove possum_headless from CD and add POSSUM2CAOM2 software ([cdcb63b](https://github.com/ErikOsinga/science-containers/commit/cdcb63bf219310b441cca51107482bc92669bd67))
+
 ## [0.9.1](https://github.com/ErikOsinga/science-containers/compare/v0.9.0...v0.9.1) (2024-03-26)
 
 
