@@ -35,7 +35,7 @@ RUN sudo -v ; curl https://rclone.org/install.sh | sudo bash
 ADD nsswitch.conf /etc/
 
 # Mircomamba Installation
-ARG PYTHON_VERSION=3.11
+ARG PYTHON_VERSION=3.12
 
 ENV CONDA_DIR=/opt/conda
 ENV PATH="${CONDA_DIR}/bin:${PATH}"

@@ -1,4 +1,4 @@
-FROM prefecthq/prefect:2.16.3-python3.11-kubernetes
+FROM prefecthq/prefect:2.16.3-python3.12-kubernetes
 
 LABEL maintainer="Erik Osinga <erik.osinga@utoronto.ca>"
 
