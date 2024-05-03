@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.0](https://github.com/ErikOsinga/science-containers/compare/v0.10.3...v0.11.0) (2024-05-03)
+
+
+### Features
+
+* add utilities for possum2caom2 ([a89e5ad](https://github.com/ErikOsinga/science-containers/commit/a89e5ad444100136c276893c05d3a0e2cb866536))
+
 ## [0.10.3](https://github.com/ErikOsinga/science-containers/compare/v0.10.2...v0.10.3) (2024-05-03)
 
 
