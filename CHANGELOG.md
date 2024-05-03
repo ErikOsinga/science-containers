@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.3](https://github.com/ErikOsinga/science-containers/compare/v0.10.2...v0.10.3) (2024-05-03)
+
+
+### Bug Fixes
+
+* **base:** Also add possum2caom2 to notebook ([c73b877](https://github.com/ErikOsinga/science-containers/commit/c73b87777d1b18ef0f2d5ebf32604d233a65de32))
+
 ## [0.10.2](https://github.com/ErikOsinga/science-containers/compare/v0.10.1...v0.10.2) (2024-05-03)
 
 
