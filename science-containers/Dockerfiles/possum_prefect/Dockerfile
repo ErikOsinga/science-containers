@@ -37,24 +37,24 @@ ADD nsswitch.conf /etc/
 
 # install python packages (used to be mamba install)
 RUN pip install numpy \
-	astropy \
-	matplotlib \
-	astropy \
-	configparser \
-	healpy \
-        prefect \
-	tqdm
-	
+    astropy \
+    matplotlib \
+    astropy \
+    configparser \
+    healpy \
+    prefect \
+    tqdm
+    
 # Install other python packages with pip
 RUN pip install RM-Tools \
-	RMTable \
-	PolSpectra \
-	gspread \
+    RMTable \
+    PolSpectra \
+    gspread \
         psrecord \
         yappi \
         gprof2dot \
         mock \
-	--no-cache-dir
+    --no-cache-dir
 
 # Get PyMultiNest dependencies
 RUN apt-get update --yes --quiet --fix-missing \

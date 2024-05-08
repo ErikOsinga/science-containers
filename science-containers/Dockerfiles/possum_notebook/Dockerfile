@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM prefecthq/prefect:2.16.3-python3.12-kubernetes
 
 LABEL maintainer="Erik Osinga <erik.osinga@utoronto.ca>"
 
@@ -8,73 +8,54 @@ WORKDIR /tmp
 
 # Install packages
 RUN apt-get update --yes --quiet --fix-missing \
-    && apt-get install --yes --quiet \
+    && apt-get install --yes --quiet acl \
         bzip2 \
         curl \
         git \
         locales \
         nano \
         rsync \
-        sssd \
-        acl \
         openssh-client \
         sudo \
         vim \
-        unzip \
         wget \
         zsh \
+        unzip \
         sssd \
         tcsh \
+        tk \
         busybox \
         libcfitsio-bin \
     && apt-get clean --yes \
     && apt-get autoremove --purge --quiet --yes \
     && rm -rf /var/lib/apt/lists/* /var/tmp/* 
 
-# Install rclone
+# install rclone 
 RUN sudo -v ; curl https://rclone.org/install.sh | sudo bash
 
 ADD nsswitch.conf /etc/
 
-# Mircomamba Installation
-ARG PYTHON_VERSION=3.12
-
-ENV CONDA_DIR=/opt/conda
-ENV PATH="${CONDA_DIR}/bin:${PATH}"
-
-COPY condarc "${CONDA_DIR}/.condarc"
-RUN set -x \
-    && curl -Ls https://micromamba.snakepit.net/api/micromamba/linux-64/latest | tar -xvj bin/micromamba \
-    && ./bin/micromamba install \
-        --root-prefix="${CONDA_DIR}" \
-        --prefix="${CONDA_DIR}" \
-        --yes \
-        python=${PYTHON_VERSION} mamba
-
-# conda profile scripts by default
-RUN ln -s ${CONDA_DIR}/etc/profile.d/conda.sh /etc/profile.d/conda.sh
-
-# install python packages
-RUN mamba install numpy \
-	astropy \
-	matplotlib \
-	astropy \
-	configparser \
-	healpy \
-	tqdm \
-	progressbar2 
-	
+# install python packages (used to be mamba install)
+RUN pip install numpy \
+    astropy \
+    matplotlib \
+    astropy \
+    configparser \
+    healpy \
+    prefect \
+    tqdm
+    
 # Install other python packages with pip
 RUN pip install RM-Tools \
-	RMTable \
-	PolSpectra \
-	gspread \
+    RMTable \
+    PolSpectra \
+    gspread \
         psrecord \
         yappi \
         gprof2dot \
         mock \
-	--no-cache-dir
-	
+    --no-cache-dir
+
 # Get PyMultiNest dependencies
 RUN apt-get update --yes --quiet --fix-missing \
     && apt-get install --yes --quiet \
@@ -100,9 +81,6 @@ ENV LD_LIBRARY_PATH=/tmp/MultiNest/lib:$LD_LIBRARY_PATH
 
 # Install PyMultiNest
 RUN pip install pymultinest
-	
-# Get jupyter in this notebook version 
-RUN mamba install jupyterlab
 
 # Install POSSUM2CAOM2
 ARG OPENCADC_BRANCH=main
@@ -115,3 +93,6 @@ RUN git clone https://github.com/${OPENCADC_REPO}/caom2tools.git && \
 
 RUN pip install git+https://github.com/${OPENCADC_REPO}/caom2pipe@${OPENCADC_BRANCH}#egg=caom2pipe
 RUN pip install git+https://github.com/${OPENCADC_REPO}/possum2caom2@${OPENCADC_BRANCH}#egg=possum2caom2
+
+# Get jupyter in the notebook version 
+RUN pip install jupyterlab
