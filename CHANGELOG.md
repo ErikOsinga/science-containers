@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.12.0](https://github.com/ErikOsinga/science-containers/compare/v0.11.0...v0.12.0) (2024-05-08)
+
+
+### Features
+
+* **base:** Unify Dockerfile for notebook and headless. Add prefect to notebook, no jupyter in headless ([2c3c1d6](https://github.com/ErikOsinga/science-containers/commit/2c3c1d67b61b333adcf23c3aecb586087d38b4ef))
+
 ## [0.11.0](https://github.com/ErikOsinga/science-containers/compare/v0.10.3...v0.11.0) (2024-05-03)
 
 
