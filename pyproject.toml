@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "science-containers"
-version = "0.12.0"
+version = "0.12.1"
 description = "Science Containers for CANFAR"
 authors = ["CANFAR <support@canfar.net>"]
 license = "GNU Affero GPL v3.0"
