@@ -89,6 +89,7 @@ jobs:
           push: true
           cache-from: type=gha
           cache-to: type=gha,mode=max
+          no-cache: true # This line enables building without using any cache
 
   builder_prefect:
     runs-on: ubuntu-latest
@@ -147,4 +148,5 @@ jobs:
             ${{ steps.metadata.outputs.IMAGE_TAGGED }}
           push: true
           cache-from: type=gha
-          cache-to: type=gha,mode=max          
+          cache-to: type=gha,mode=max
+          no-cache: true # This line enables building without using any cache
