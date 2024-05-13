@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.13.0](https://github.com/ErikOsinga/science-containers/compare/v0.12.1...v0.13.0) (2024-05-13)
+
+
+### Features
+
+* **base:** Add no cache to continuous development whenever possum2caom2 needs to be updated ([c097797](https://github.com/ErikOsinga/science-containers/commit/c0977976746d87a71c2cd8c0d3c2105ffb259562))
+
 ## [0.12.1](https://github.com/ErikOsinga/science-containers/compare/v0.12.0...v0.12.1) (2024-05-08)
 
 
