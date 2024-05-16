@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.0](https://github.com/ErikOsinga/science-containers/compare/v0.13.0...v1.0.0) (2024-05-16)
+
+
+### ⚠ BREAKING CHANGES
+
+* Version 1, first production version
+
+### Features
+
+* Version 1, first production version ([47bc23f](https://github.com/ErikOsinga/science-containers/commit/47bc23f1cc9925d0387a87911f9425233721c1d2))
+
 ## [0.13.0](https://github.com/ErikOsinga/science-containers/compare/v0.12.1...v0.13.0) (2024-05-13)
 
 
