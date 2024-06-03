@@ -6,10 +6,13 @@ USER root
 
 WORKDIR /tmp
 
+# required for java (openjdk)
 RUN apt update
 RUN apt-get install --yes --quiet software-properties-common
 RUN apt update
+apt-get install python3-launchpadlib
 RUN add-apt-repository ppa:openjdk-r/ppa
+
 # Install packages
 RUN apt-get update --yes --quiet --fix-missing \
     && apt-get install --yes --quiet acl \
