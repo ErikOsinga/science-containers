@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.0](https://github.com/ErikOsinga/science-containers/compare/v1.2.0...v1.3.0) (2024-06-03)
+
+
+### Features
+
+* Add java to notebook version try3 ([0b4c80c](https://github.com/ErikOsinga/science-containers/commit/0b4c80c4dfaeeed6413882f0c89a5670acd2511b))
+
 ## [1.2.0](https://github.com/ErikOsinga/science-containers/compare/v1.1.0...v1.2.0) (2024-06-03)
 
 
