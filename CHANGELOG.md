@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.6](https://github.com/ErikOsinga/science-containers/compare/v1.4.5...v1.4.6) (2024-06-03)
+
+
+### Bug Fixes
+
+* Add java to docker try10 ([fa46979](https://github.com/ErikOsinga/science-containers/commit/fa469797a997fc8774f251078fd882ffb28bbcd3))
+
 ## [1.4.5](https://github.com/ErikOsinga/science-containers/compare/v1.4.4...v1.4.5) (2024-06-03)
 
 
