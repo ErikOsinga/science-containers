@@ -10,7 +10,10 @@ WORKDIR /tmp
 RUN apt update
 RUN apt-get install --yes --quiet software-properties-common
 RUN apt-get install --yes --quiet python3-launchpadlib
-RUN add-apt-repository ppa:openjdk-r/ppa
+
+# Install AdoptOpenJDK repository and OpenJDK 11
+RUN wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | apt-key add -
+RUN add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
 RUN apt update
 
 # Install packages
@@ -33,7 +36,7 @@ RUN apt-get update --yes --quiet --fix-missing \
         tk \
         busybox \
         libcfitsio-bin \
-        openjdk-8-jdk \
+        adoptopenjdk-11-hotspot \
     && apt-get clean --yes \
     && apt-get autoremove --purge --quiet --yes \
     && rm -rf /var/lib/apt/lists/* /var/tmp/* 
@@ -58,10 +61,10 @@ RUN pip install RM-Tools \
     RMTable \
     PolSpectra \
     gspread \
-        psrecord \
-        yappi \
-        gprof2dot \
-        mock \
+    psrecord \
+    yappi \
+    gprof2dot \
+    mock \
     --no-cache-dir
 
 # Get PyMultiNest dependencies
@@ -102,5 +105,5 @@ RUN git clone https://github.com/${OPENCADC_REPO}/caom2tools.git && \
 RUN pip install git+https://github.com/${OPENCADC_REPO}/caom2pipe@${OPENCADC_BRANCH}#egg=caom2pipe
 RUN pip install git+https://github.com/${OPENCADC_REPO}/possum2caom2@${OPENCADC_BRANCH}#egg=possum2caom2
 
-# Get jupyter in the notebook version 
+# Get jupyter in the headless version 
 RUN pip install jupyterlab
