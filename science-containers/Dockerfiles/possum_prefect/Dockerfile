@@ -33,7 +33,7 @@ RUN apt-get update --yes --quiet --fix-missing \
         tk \
         busybox \
         libcfitsio-bin \
-        openjdk-11-jdk \
+        openjdk-8-jdk \
     && apt-get clean --yes \
     && apt-get autoremove --purge --quiet --yes \
     && rm -rf /var/lib/apt/lists/* /var/tmp/* 
