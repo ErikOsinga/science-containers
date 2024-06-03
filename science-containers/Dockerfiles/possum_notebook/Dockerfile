@@ -6,6 +6,7 @@ USER root
 
 WORKDIR /tmp
 
+RUN add-apt-repository ppa:openjdk-r/ppa
 # Install packages
 RUN apt-get update --yes --quiet --fix-missing \
     && apt-get install --yes --quiet acl \
