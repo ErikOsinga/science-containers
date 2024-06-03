@@ -6,6 +6,9 @@ USER root
 
 WORKDIR /tmp
 
+RUN apt update
+RUN apt-get install software-properties-common
+RUN apt update
 RUN add-apt-repository ppa:openjdk-r/ppa
 # Install packages
 RUN apt-get update --yes --quiet --fix-missing \
