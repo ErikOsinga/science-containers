@@ -6,6 +6,13 @@ USER root
 
 WORKDIR /tmp
 
+# required for java (openjdk)
+RUN apt update
+RUN apt-get install --yes --quiet software-properties-common
+RUN apt update
+RUN apt-get install python3-launchpadlib
+RUN add-apt-repository ppa:openjdk-r/ppa
+
 # Install packages
 RUN apt-get update --yes --quiet --fix-missing \
     && apt-get install --yes --quiet acl \
@@ -26,6 +33,7 @@ RUN apt-get update --yes --quiet --fix-missing \
         tk \
         busybox \
         libcfitsio-bin \
+        openjdk-11-jdk \
     && apt-get clean --yes \
     && apt-get autoremove --purge --quiet --yes \
     && rm -rf /var/lib/apt/lists/* /var/tmp/* 
