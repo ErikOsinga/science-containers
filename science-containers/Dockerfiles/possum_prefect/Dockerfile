@@ -9,9 +9,9 @@ WORKDIR /tmp
 # required for java (openjdk)
 RUN apt update
 RUN apt-get install --yes --quiet software-properties-common
-RUN apt update
 RUN apt-get install --yes --quiet python3-launchpadlib
 RUN add-apt-repository ppa:openjdk-r/ppa
+RUN apt update
 
 # Install packages
 RUN apt-get update --yes --quiet --fix-missing \
