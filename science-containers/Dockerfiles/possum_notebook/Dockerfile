@@ -6,16 +6,6 @@ USER root
 
 WORKDIR /tmp
 
-# required for java
-RUN apt update --yes --quiet --fix-missing
-RUN apt-get install --yes --quiet wget 
-RUN apt-get install --yes --quiet software-properties-common
-RUN apt-get install --yes --quiet python3-launchpadlib
-# Install AdoptOpenJDK repository and OpenJDK 11
-RUN wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | apt-key add -
-RUN add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
-RUN apt update
-
 # Install packages
 RUN apt-get update --yes --quiet --fix-missing \
     && apt-get install --yes --quiet acl \
@@ -28,6 +18,7 @@ RUN apt-get update --yes --quiet --fix-missing \
         openssh-client \
         sudo \
         vim \
+        wget \
         zsh \
         unzip \
         sssd \
@@ -35,7 +26,7 @@ RUN apt-get update --yes --quiet --fix-missing \
         tk \
         busybox \
         libcfitsio-bin \
-        adoptopenjdk-11-hotspot \
+        default-jre \
     && apt-get clean --yes \
     && apt-get autoremove --purge --quiet --yes \
     && rm -rf /var/lib/apt/lists/* /var/tmp/* 

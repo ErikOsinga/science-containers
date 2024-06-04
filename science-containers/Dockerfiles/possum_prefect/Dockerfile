@@ -6,13 +6,6 @@ USER root
 
 WORKDIR /tmp
 
-# required for java (openjdk)
-RUN apt update
-RUN apt-get install --yes --quiet software-properties-common
-RUN apt-get install --yes --quiet python3-launchpadlib
-RUN add-apt-repository ppa:openjdk-r/ppa
-RUN apt update
-
 # Install packages
 RUN apt-get update --yes --quiet --fix-missing \
     && apt-get install --yes --quiet acl \
@@ -33,7 +26,7 @@ RUN apt-get update --yes --quiet --fix-missing \
         tk \
         busybox \
         libcfitsio-bin \
-        openjdk-8-jdk \
+        default-jre \
     && apt-get clean --yes \
     && apt-get autoremove --purge --quiet --yes \
     && rm -rf /var/lib/apt/lists/* /var/tmp/* 
@@ -58,10 +51,10 @@ RUN pip install RM-Tools \
     RMTable \
     PolSpectra \
     gspread \
-        psrecord \
-        yappi \
-        gprof2dot \
-        mock \
+    psrecord \
+    yappi \
+    gprof2dot \
+    mock \
     --no-cache-dir
 
 # Get PyMultiNest dependencies
@@ -103,4 +96,4 @@ RUN pip install git+https://github.com/${OPENCADC_REPO}/caom2pipe@${OPENCADC_BRA
 RUN pip install git+https://github.com/${OPENCADC_REPO}/possum2caom2@${OPENCADC_BRANCH}#egg=possum2caom2
 
 # dont get jupyter in the headless version 
-### RUN mamba install jupyterlab
+### RUN pip install jupyterlab
