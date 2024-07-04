@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/ErikOsinga/science-containers/compare/v1.4.8...v1.5.0) (2024-07-04)
+
+
+### Features
+
+* Add pyfftw ([2585c42](https://github.com/ErikOsinga/science-containers/commit/2585c42f891f3040b44ef40c36f0d57c4580d7db))
+
 ## [1.4.8](https://github.com/ErikOsinga/science-containers/compare/v1.4.7...v1.4.8) (2024-06-04)
 
 
