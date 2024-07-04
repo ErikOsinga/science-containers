@@ -44,7 +44,6 @@ RUN pip install numpy \
     configparser \
     healpy \
     prefect \
-    pyfftw \
     tqdm
     
 # Install other python packages with pip
