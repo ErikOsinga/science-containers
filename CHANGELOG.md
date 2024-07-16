@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.6.0](https://github.com/ErikOsinga/science-containers/compare/v1.5.0...v1.6.0) (2024-07-16)
+
+
+### Features
+
+* remove pyfftw and install cadctap pyvo and vos for interacting with youCAT ([76a4e2e](https://github.com/ErikOsinga/science-containers/commit/76a4e2e42a1af4fcdeb5ee3efb3a508ed0118091))
+
+
+### Bug Fixes
+
+* remove pyfftw as it doesnt work with py312 ([959109a](https://github.com/ErikOsinga/science-containers/commit/959109a7dac278c833d2f89c50c6657b5a699357))
+
 ## [1.5.0](https://github.com/ErikOsinga/science-containers/compare/v1.4.8...v1.5.0) (2024-07-04)
 
 
