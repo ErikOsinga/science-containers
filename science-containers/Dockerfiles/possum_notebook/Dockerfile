@@ -55,6 +55,9 @@ RUN pip install RM-Tools \
     yappi \
     gprof2dot \
     mock \
+    vos \
+    pyvo \ 
+    cadctap \
     --no-cache-dir
 
 # Get PyMultiNest dependencies
