@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.1](https://github.com/ErikOsinga/science-containers/compare/v1.6.0...v1.6.1) (2024-07-23)
+
+
+### Bug Fixes
+
+* update README and force new build to update possum2caom2 v0.1.4 ([80fd30c](https://github.com/ErikOsinga/science-containers/commit/80fd30cae06fcf7cb1646f5b7ebc1471c7f59f9f))
+
 ## [1.6.0](https://github.com/ErikOsinga/science-containers/compare/v1.5.0...v1.6.0) (2024-07-16)
 
 
