@@ -26,6 +26,7 @@ RUN apt-get update --yes --quiet --fix-missing \
         tk \
         busybox \
         libcfitsio-bin \
+        libcfitsio-dev \
         default-jre \
     && apt-get clean --yes \
     && apt-get autoremove --purge --quiet --yes \
