@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.1](https://github.com/ErikOsinga/science-containers/compare/v1.7.0...v1.7.1) (2024-07-30)
+
+
+### Bug Fixes
+
+* try fix with dev version ([906c5fe](https://github.com/ErikOsinga/science-containers/commit/906c5fe2372deb0a3b22bd338222e9c2cd439e17))
+
 ## [1.7.0](https://github.com/ErikOsinga/science-containers/compare/v1.6.1...v1.7.0) (2024-07-30)
 
 
