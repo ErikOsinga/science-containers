@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/ErikOsinga/science-containers/compare/v1.6.1...v1.7.0) (2024-07-30)
+
+
+### Features
+
+* install FITSverify into notebook ([da6a8c3](https://github.com/ErikOsinga/science-containers/commit/da6a8c3f5da44a61fd6831a02f4e9777d7bb1d32))
+
 ## [1.6.1](https://github.com/ErikOsinga/science-containers/compare/v1.6.0...v1.6.1) (2024-07-23)
 
 
