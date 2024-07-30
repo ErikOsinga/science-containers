@@ -89,6 +89,9 @@ RUN pip install pymultinest
 
 # Install fitsverify, code from https://github.com/opencadc/cfht2caom2/blob/57bc174a70772715b0b609908e8e647553515dcd/Dockerfile#L49C1-L59C60
 
+# Create necessary directories
+RUN mkdir -p /usr/local/src /usr/src/app
+
 ARG FITSVERIFY_VERSION=4.20
 ARG FITSVERIFY_URL=https://heasarc.gsfc.nasa.gov/docs/software/ftools/fitsverify/fitsverify-${FITSVERIFY_VERSION}.tar.gz
 ADD ${FITSVERIFY_URL}  /usr/local/src/
