@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.3](https://github.com/ErikOsinga/science-containers/compare/v1.7.2...v1.7.3) (2024-07-31)
+
+
+### Bug Fixes
+
+* Working version of fitsverify in both containers ([6e5d348](https://github.com/ErikOsinga/science-containers/commit/6e5d34832dc636b11c5d2c0853e9707e4eb85749))
+
 ## [1.7.2](https://github.com/ErikOsinga/science-containers/compare/v1.7.1...v1.7.2) (2024-07-30)
 
 
