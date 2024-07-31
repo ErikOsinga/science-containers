@@ -26,6 +26,7 @@ RUN apt-get update --yes --quiet --fix-missing \
         tk \
         busybox \
         libcfitsio-bin \
+        libcfitsio-dev \
         default-jre \
     && apt-get clean --yes \
     && apt-get autoremove --purge --quiet --yes \
@@ -56,8 +57,8 @@ RUN pip install RM-Tools \
     gprof2dot \
     mock \
     vos \
-    pyvo \
-    cadctap \ 
+    pyvo \ 
+    cadctap \
     --no-cache-dir
 
 # Get PyMultiNest dependencies
@@ -85,6 +86,23 @@ ENV LD_LIBRARY_PATH=/tmp/MultiNest/lib:$LD_LIBRARY_PATH
 
 # Install PyMultiNest
 RUN pip install pymultinest
+
+# Install fitsverify, code from https://github.com/opencadc/cfht2caom2/blob/57bc174a70772715b0b609908e8e647553515dcd/Dockerfile#L49C1-L59C60
+
+# Create necessary directories
+RUN mkdir -p /usr/local/src /usr/src/app
+
+ARG FITSVERIFY_VERSION=4.20
+ARG FITSVERIFY_URL=https://heasarc.gsfc.nasa.gov/docs/software/ftools/fitsverify/fitsverify-${FITSVERIFY_VERSION}.tar.gz
+ADD ${FITSVERIFY_URL}  /usr/local/src/
+RUN cd /usr/local/src \
+  && tar xvf fitsverify-${FITSVERIFY_VERSION}.tar.gz \
+  && cd fitsverify-${FITSVERIFY_VERSION} \
+  && gcc -o fitsverify ftverify.c fvrf_data.c fvrf_file.c fvrf_head.c fvrf_key.c fvrf_misc.c -DSTANDALONE -I/usr/local/include -L/usr/local/lib -lcfitsio -lm -lnsl \
+  && cp ./fitsverify /usr/local/bin/ \
+  && ldconfig \
+  && cd /usr/src/app \
+  && rm -rf /usr/local/src/fitsverify-${FITSVERIFY_VERSION}
 
 # Install POSSUM2CAOM2
 ARG OPENCADC_BRANCH=main
