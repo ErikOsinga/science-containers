@@ -51,6 +51,8 @@ The repository for the platform service infrastructure and deployment configurat
 
 
 ### Additional version notes
+Version 1.7 now contains fitsverify, part of libcfitsio-bin. Version 1.7.4 should contain a new version of possum2caom2 (caom2 to version 2.6.2 and caom2utils to version 1.7.3,  0.1.6 of possum2caom2) which (hopefully) fixes ingesting 3D FDFs and RMSF into CADC. 
+
 Version 1.6 (2024-07-16) now contains java (jre) and cadctap pyvo and vos as well. Note that pyfftw does not work with py3.12 as of 2024-07-23 but there is a separate container available on CANFAR which runs py3.11. Additionally there is also a container available that contains a 2022 version of WSclean (both not maintained on this GitHub page though). 
 
 Version 1.0 (2024-05-16) is now here! The POSSUM polarimetry processing is now in full-swing and working (so far), so it is time for version 1.0.
