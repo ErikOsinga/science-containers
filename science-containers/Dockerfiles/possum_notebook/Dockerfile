@@ -59,6 +59,7 @@ RUN pip install RM-Tools \
     vos \
     pyvo \ 
     cadctap \
+    BeautifulSoup4 \
     --no-cache-dir
 
 # Get PyMultiNest dependencies
