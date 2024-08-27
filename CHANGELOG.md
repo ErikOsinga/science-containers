@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.8.0](https://github.com/ErikOsinga/science-containers/compare/v1.7.5...v1.8.0) (2024-08-27)
+
+
+### Features
+
+* **base:** add beautifulsoup module ([fb425ee](https://github.com/ErikOsinga/science-containers/commit/fb425ee41c9233b752e2f4e38e157505078a52a1))
+
 ## [1.7.5](https://github.com/ErikOsinga/science-containers/compare/v1.7.4...v1.7.5) (2024-08-20)
 
 
