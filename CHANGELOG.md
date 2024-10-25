@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.9.0](https://github.com/ErikOsinga/science-containers/compare/v1.8.0...v1.9.0) (2024-10-25)
+
+
+### Features
+
+* add bagpipes ([7b53ee4](https://github.com/ErikOsinga/science-containers/commit/7b53ee46fbb54e1ced34500aee784a6df9c8c379))
+
 ## [1.8.0](https://github.com/ErikOsinga/science-containers/compare/v1.7.5...v1.8.0) (2024-08-27)
 
 
