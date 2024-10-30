@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.1](https://github.com/ErikOsinga/science-containers/compare/v1.10.0...v1.10.1) (2024-10-30)
+
+
+### Bug Fixes
+
+* add bagpipes back in to resolve dependencies ([49f4fcc](https://github.com/ErikOsinga/science-containers/commit/49f4fcc66834023798ad4cbf299a3aa2dc4ee6b5))
+
 ## [1.10.0](https://github.com/ErikOsinga/science-containers/compare/v1.9.0...v1.10.0) (2024-10-30)
 
 
