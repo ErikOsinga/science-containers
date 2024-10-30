@@ -91,6 +91,9 @@ ENV LD_LIBRARY_PATH=/tmp/MultiNest/lib:$LD_LIBRARY_PATH
 # Install PyMultiNest
 RUN pip install pymultinest
 
+# Install bagpipes
+RUN pip install bagpipes
+
 # Install fitsverify, code from https://github.com/opencadc/cfht2caom2/blob/57bc174a70772715b0b609908e8e647553515dcd/Dockerfile#L49C1-L59C60
 
 # Create necessary directories
