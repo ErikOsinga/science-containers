@@ -28,6 +28,8 @@ RUN apt-get update --yes --quiet --fix-missing \
         libcfitsio-bin \
         libcfitsio-dev \
         default-jre \
+        openmpi-bin \
+        libopenmpi-dev \
     && apt-get clean --yes \
     && apt-get autoremove --purge --quiet --yes \
     && rm -rf /var/lib/apt/lists/* /var/tmp/* 
@@ -60,6 +62,7 @@ RUN pip install RM-Tools \
     pyvo \ 
     cadctap \
     BeautifulSoup4 \
+    mpi4py \
     --no-cache-dir
 
 # Get PyMultiNest dependencies
@@ -87,9 +90,6 @@ ENV LD_LIBRARY_PATH=/tmp/MultiNest/lib:$LD_LIBRARY_PATH
 
 # Install PyMultiNest
 RUN pip install pymultinest
-
-# Install bagpipes
-RUN pip install bagpipes
 
 # Install fitsverify, code from https://github.com/opencadc/cfht2caom2/blob/57bc174a70772715b0b609908e8e647553515dcd/Dockerfile#L49C1-L59C60
 
