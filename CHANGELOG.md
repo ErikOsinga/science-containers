@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.10.0](https://github.com/ErikOsinga/science-containers/compare/v1.9.0...v1.10.0) (2024-10-30)
+
+
+### Features
+
+* add MPI ([e8f1924](https://github.com/ErikOsinga/science-containers/commit/e8f19249b6708cf856fbb76e6a4a0bc930d91fa2))
+
 ## [1.9.0](https://github.com/ErikOsinga/science-containers/compare/v1.8.0...v1.9.0) (2024-10-25)
 
 
