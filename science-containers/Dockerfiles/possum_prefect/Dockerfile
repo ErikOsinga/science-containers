@@ -60,6 +60,7 @@ RUN pip install RM-Tools \
     pyvo \ 
     cadctap \
     BeautifulSoup4 \
+    astroquery \
     --no-cache-dir
 
 # Get PyMultiNest dependencies
