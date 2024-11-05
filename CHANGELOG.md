@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.11.0](https://github.com/ErikOsinga/science-containers/compare/v1.10.1...v1.11.0) (2024-11-05)
+
+
+### Features
+
+* add astroquery ([c52d88e](https://github.com/ErikOsinga/science-containers/commit/c52d88ee7338bbfe7d606513d72b4bc5c0e029cc))
+
 ## [1.10.1](https://github.com/ErikOsinga/science-containers/compare/v1.10.0...v1.10.1) (2024-10-30)
 
 
