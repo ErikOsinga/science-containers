@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.12.1](https://github.com/ErikOsinga/science-containers/compare/v1.12.0...v1.12.1) (2024-12-03)
+
+
+### Bug Fixes
+
+* should have been psycopg2-binary' ([285a038](https://github.com/ErikOsinga/science-containers/commit/285a038997f054229519bc62154187cbec1fab37))
+
 ## [1.12.0](https://github.com/ErikOsinga/science-containers/compare/v1.11.0...v1.12.0) (2024-12-03)
 
 
