@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.12.0](https://github.com/ErikOsinga/science-containers/compare/v1.11.0...v1.12.0) (2024-12-03)
+
+
+### Features
+
+* add cartopy and psycopg2-binary for status page ([cb0ae8a](https://github.com/ErikOsinga/science-containers/commit/cb0ae8a039f16602ba2131c8fe0e38872e502d70))
+
 ## [1.11.0](https://github.com/ErikOsinga/science-containers/compare/v1.10.1...v1.11.0) (2024-11-05)
 
 
