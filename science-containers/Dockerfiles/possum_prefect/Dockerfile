@@ -62,7 +62,7 @@ RUN pip install RM-Tools \
     BeautifulSoup4 \
     astroquery \
     cartopy \
-    psycopg2 \
+    psycopg2-binary \
     --no-cache-dir
 
 # Get PyMultiNest dependencies
