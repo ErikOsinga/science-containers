@@ -30,6 +30,8 @@ RUN apt-get update --yes --quiet --fix-missing \
         default-jre \
         openmpi-bin \
         libopenmpi-dev \
+        screen \
+        singularity-container \
     && apt-get clean --yes \
     && apt-get autoremove --purge --quiet --yes \
     && rm -rf /var/lib/apt/lists/* /var/tmp/* 
@@ -38,6 +40,15 @@ RUN apt-get update --yes --quiet --fix-missing \
 RUN sudo -v ; curl https://rclone.org/install.sh | sudo bash
 
 ADD nsswitch.conf /etc/
+
+# Install Apptainer as well, from the official PPA
+RUN apt-get update --yes --quiet \
+    && apt-get install --yes --quiet software-properties-common \   # provides add-apt-repository 
+    && add-apt-repository --yes ppa:apptainer/ppa \
+    && apt-get update --yes --quiet \
+    && apt-get install --yes --quiet apptainer \
+    && apt-get clean --yes \
+    && rm -rf /var/lib/apt/lists/* /var/tmp/*
 
 # install python packages (used to be mamba install)
 RUN pip install numpy \
