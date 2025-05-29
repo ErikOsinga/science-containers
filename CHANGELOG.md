@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.0](https://github.com/ErikOsinga/science-containers/compare/v1.12.1...v1.13.0) (2025-05-29)
+
+
+### Features
+
+* add singularity, apptainer and screen ([6c46c84](https://github.com/ErikOsinga/science-containers/commit/6c46c84f8044fe766ac79f9de8585187e6688486))
+
 ## [1.12.1](https://github.com/ErikOsinga/science-containers/compare/v1.12.0...v1.12.1) (2024-12-03)
 
 
