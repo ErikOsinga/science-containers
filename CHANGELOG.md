@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.1](https://github.com/ErikOsinga/science-containers/compare/v1.13.0...v1.13.1) (2025-05-30)
+
+
+### Bug Fixes
+
+* update readme ([952c6ac](https://github.com/ErikOsinga/science-containers/commit/952c6ac9cbc81ea2a3d1dc3d0ccffea574b6b076))
+
 ## [1.13.0](https://github.com/ErikOsinga/science-containers/compare/v1.12.1...v1.13.0) (2025-05-29)
 
 
