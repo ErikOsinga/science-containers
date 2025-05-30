@@ -51,6 +51,8 @@ The repository for the platform service infrastructure and deployment configurat
 
 
 ### Additional version notes
+Version 1.13 and above will contain singularity/apptainer and screen
+
 Version 1.7.5 Contains possum2caom2 as of 2024-08-20, which has the ingest set-up for the 3D pipeline. 
 
 Version 1.7 now contains fitsverify, part of libcfitsio-bin. Version 1.7.4 should contain a new version of possum2caom2 (caom2 to version 2.6.2 and caom2utils to version 1.7.3,  0.1.6 of possum2caom2) which (hopefully) fixes ingesting 3D FDFs and RMSF into CADC. 
