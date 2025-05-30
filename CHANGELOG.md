@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.4](https://github.com/ErikOsinga/science-containers/compare/v1.13.3...v1.13.4) (2025-05-30)
+
+
+### Bug Fixes
+
+* this should finally install apptainer/singularity ([c9c8f99](https://github.com/ErikOsinga/science-containers/commit/c9c8f992129e18b18735871e7514bd302e9b3865))
+
 ## [1.13.3](https://github.com/ErikOsinga/science-containers/compare/v1.13.2...v1.13.3) (2025-05-30)
 
 
