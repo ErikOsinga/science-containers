@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.3](https://github.com/ErikOsinga/science-containers/compare/v1.13.2...v1.13.3) (2025-05-30)
+
+
+### Bug Fixes
+
+* remove singularity ([0c7be0c](https://github.com/ErikOsinga/science-containers/commit/0c7be0ce089083cc8f044a19d5699aff69ada41f))
+
 ## [1.13.2](https://github.com/ErikOsinga/science-containers/compare/v1.13.1...v1.13.2) (2025-05-30)
 
 
