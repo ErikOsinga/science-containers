@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.13.2](https://github.com/ErikOsinga/science-containers/compare/v1.13.1...v1.13.2) (2025-05-30)
+
+
+### Bug Fixes
+
+* update dockerfile to address bug ([5e2b4d9](https://github.com/ErikOsinga/science-containers/commit/5e2b4d92e62d14ceb0295a4bd8e7d710294cb06a))
+
 ## [1.13.1](https://github.com/ErikOsinga/science-containers/compare/v1.13.0...v1.13.1) (2025-05-30)
 
 
