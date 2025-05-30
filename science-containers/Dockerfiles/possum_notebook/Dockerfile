@@ -40,14 +40,49 @@ RUN sudo -v ; curl https://rclone.org/install.sh | sudo bash
 
 ADD nsswitch.conf /etc/
 
-# Install Apptainer as well, from the official PPA
+# Install build deps for Apptainer
 RUN apt-get update -qq \
- && apt-get install -y software-properties-common \
- && add-apt-repository --yes ppa:apptainer/ppa \
- && apt-get update -qq \
- && apt-get install -y apptainer \
- && apt-get clean -y \
- && rm -rf /var/lib/apt/lists/* /var/tmp/*
+ && apt-get install -y --no-install-recommends \
+       build-essential \
+       libseccomp-dev \
+       pkg-config \
+       squashfs-tools \
+       cryptsetup \
+       uuid-dev \
+       libgpgme-dev \
+       libbz2-dev \
+       liblz4-dev \
+       libarchive-dev \
+       golang-go \
+ && rm -rf /var/lib/apt/lists/*
+
+# Build & install Apptainer from source (no SUID)
+ARG APPTAINER_VER=1.2.3
+RUN apt-get update -qq \
+ && apt-get install -y --no-install-recommends \
+       build-essential \
+       libseccomp-dev \
+       pkg-config \
+       squashfs-tools \
+       cryptsetup \
+       uuid-dev \
+       libgpgme-dev \
+       libbz2-dev \
+       liblz4-dev \
+       libarchive-dev \
+       golang-go \
+ && mkdir -p /usr/local/src \
+ && curl -fsSL "https://github.com/apptainer/apptainer/releases/download/v${APPTAINER_VER}/apptainer-${APPTAINER_VER}.tar.gz" \
+       | tar xz -C /usr/local/src \
+ && cd /usr/local/src/apptainer-${APPTAINER_VER} \
+ && ./mconfig --without-suid \
+ && make -C builddir \
+ && make -C builddir install \
+ && cd / \
+ && rm -rf /usr/local/src/apptainer-${APPTAINER_VER} \
+ && apt-get purge -y --auto-remove build-essential golang-go \
+ && rm -rf /var/lib/apt/lists/*
+
 
 # install python packages (used to be mamba install)
 RUN pip install numpy \
