@@ -60,7 +60,7 @@ RUN pip install RM-Tools \
     pyvo \ 
     cadctap \
     BeautifulSoup4 \
-    astroquery=0.4.6 \
+    astroquery==0.4.6 \
     cartopy \
     psycopg2-binary \
     --no-cache-dir
