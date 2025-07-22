@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.14.0](https://github.com/ErikOsinga/science-containers/compare/v1.13.4...v1.14.0) (2025-07-22)
+
+
+### Features
+
+* downgrade astroquery so I can login headlessly ([f069f82](https://github.com/ErikOsinga/science-containers/commit/f069f8255896e7951f5862ad162f5831e6169481))
+
 ## [1.13.4](https://github.com/ErikOsinga/science-containers/compare/v1.13.3...v1.13.4) (2025-05-30)
 
 
