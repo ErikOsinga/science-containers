@@ -60,10 +60,11 @@ RUN pip install RM-Tools \
     pyvo \ 
     cadctap \
     BeautifulSoup4 \
-    astroquery \
+    astroquery=0.4.6 \
     cartopy \
     psycopg2-binary \
     --no-cache-dir
+# require astroquery 0.4.6 to login to CASDA headlessly
 
 # Get PyMultiNest dependencies
 RUN apt-get update --yes --quiet --fix-missing \
