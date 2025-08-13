@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.0](https://github.com/ErikOsinga/science-containers/compare/v1.14.1...v1.15.0) (2025-08-13)
+
+
+### Features
+
+* install pyregion ([2d76a41](https://github.com/ErikOsinga/science-containers/commit/2d76a4123bf404f112267d8c2fe9bcd33cdda74e))
+
 ## [1.14.1](https://github.com/ErikOsinga/science-containers/compare/v1.14.0...v1.14.1) (2025-07-22)
 
 
