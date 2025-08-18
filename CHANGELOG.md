@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.15.1](https://github.com/ErikOsinga/science-containers/compare/v1.15.0...v1.15.1) (2025-08-18)
+
+
+### Bug Fixes
+
+* force update containers to get new possum2caom2 version ([04fd6e0](https://github.com/ErikOsinga/science-containers/commit/04fd6e00ebaeb6651ffc9da8058bd13cb8e9d3fa))
+
 ## [1.15.0](https://github.com/ErikOsinga/science-containers/compare/v1.14.1...v1.15.0) (2025-08-13)
 
 
