@@ -51,6 +51,10 @@ The repository for the platform service infrastructure and deployment configurat
 
 
 ### Additional version notes
+Version 1.15 have the newest version of possum2caom2 (as of Aug 18, 2025)
+
+Version 1.14 and up have a downgraded version of astroquery to allow headless login
+
 Version 1.13 and above will contain singularity/apptainer and screen
 
 Version 1.7.5 Contains possum2caom2 as of 2024-08-20, which has the ingest set-up for the 3D pipeline. 
