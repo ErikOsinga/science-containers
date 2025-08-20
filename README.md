@@ -51,7 +51,7 @@ The repository for the platform service infrastructure and deployment configurat
 
 
 ### Additional version notes
-Version 1.15 have the newest version of possum2caom2 (as of Aug 18, 2025)
+Version 1.15.2+ have the newest version of possum2caom2 (as of Aug 20, 2025)
 
 Version 1.14 and up have a downgraded version of astroquery to allow headless login
 
