@@ -1,6 +1,6 @@
 # CANFAR Science Containers for POSSUM/VLASS
 
-This repository hosts Docker container configurations for the VLASS (TODO) and POSSUM pipelines, optimized for deployment on the CANFAR Science Platform but more broadly employable as well. These containers are designed to facilitate scientific computing tasks in a reproducible and scalable manner. The repository is based on the original repository found [here](https://github.com/opencadc/science-containers/).
+This repository hosts Docker container configurations for the VLASS* and POSSUM pipelines, optimized for deployment on the CANFAR Science Platform but more broadly employable as well. These containers are designed to facilitate scientific computing tasks in a reproducible and scalable manner. The repository is based on the original repository found [here](https://github.com/opencadc/science-containers/).
 
 For POSSUM there are currently two Dockerfiles, which have identical software, except that the 'notebook' version installs jupyterlab, while the 'headless' version does not. 
 
