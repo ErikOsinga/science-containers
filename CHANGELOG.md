@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.16.0](https://github.com/ErikOsinga/science-containers/compare/v1.15.2...v1.16.0) (2025-12-17)
+
+
+### Features
+
+* add python-dotenv for POSSUMutils ([ff6e81a](https://github.com/ErikOsinga/science-containers/commit/ff6e81a78527882614b3990d6dcc93d58f7e103e))
+
 ## [1.15.2](https://github.com/ErikOsinga/science-containers/compare/v1.15.1...v1.15.2) (2025-08-20)
 
 
