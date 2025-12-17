@@ -112,6 +112,7 @@ RUN pip install RM-Tools \
     astroquery \
     cartopy \
     psycopg2-binary \
+    python-dotenv \
     --no-cache-dir
 
 # Get PyMultiNest dependencies

@@ -64,6 +64,7 @@ RUN pip install RM-Tools \
     astroquery==0.4.6 \
     cartopy \
     psycopg2-binary \
+    python-dotenv \
     --no-cache-dir
 # require astroquery 0.4.6 to login to CASDA headlessly
 
