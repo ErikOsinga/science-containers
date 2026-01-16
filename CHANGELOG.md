@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.17.0](https://github.com/ErikOsinga/science-containers/compare/v1.16.0...v1.17.0) (2026-01-16)
+
+
+### Features
+
+* force update caom2repo to 1.6.3 ([8a11a7b](https://github.com/ErikOsinga/science-containers/commit/8a11a7b866bcd6d5ab11913f2913b8f75ad3f614))
+
 ## [1.16.0](https://github.com/ErikOsinga/science-containers/compare/v1.15.2...v1.16.0) (2025-12-17)
 
 
