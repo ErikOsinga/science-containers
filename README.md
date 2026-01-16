@@ -33,6 +33,7 @@ The workflow process is as follows:
 ## TODO
 
 - Add functionality to automatically add labels once CANFAR supports this feature.
+- 2026-01: I have heard through the grapevine that labels are optional
 
 ## Contributing
 
