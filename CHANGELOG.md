@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/ErikOsinga/science-containers/compare/v1.17.0...v2.0.0) (2026-02-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* update from prefect2 to prefect3
+
+### Features
+
+* update from prefect2 to prefect3 ([a1eb503](https://github.com/ErikOsinga/science-containers/commit/a1eb503e2e9c885f05ac128870b67cbe1d740dd1))
+
 ## [1.17.0](https://github.com/ErikOsinga/science-containers/compare/v1.16.0...v1.17.0) (2026-01-16)
 
 
