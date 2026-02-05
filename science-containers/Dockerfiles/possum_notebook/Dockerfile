@@ -122,14 +122,14 @@ RUN apt-get update --yes --quiet --fix-missing \
         libblas-dev \
         liblapack3 \
         liblapack-dev \
-        libatlas3-base \
-        libatlas-base-dev \
         cmake \
         build-essential \
         gfortran \
+        libnsl-dev \
+        libtirpc-dev \
     && apt-get clean --yes \
     && apt-get autoremove --purge --quiet --yes \
-    && rm -rf /var/lib/apt/lists/* /var/tmp/* 
+    && rm -rf /var/lib/apt/lists/* /var/tmp/*
 
 # Build the libraries for PyMultiNest
 RUN git clone https://github.com/JohannesBuchner/MultiNest
