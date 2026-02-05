@@ -1,4 +1,4 @@
-FROM prefecthq/prefect:2.16.3-python3.12-kubernetes
+FROM prefecthq/prefect:3-python3.12-kubernetes
 
 LABEL maintainer="Erik Osinga <erik.osinga@utoronto.ca>"
 
@@ -58,7 +58,7 @@ RUN pip install RM-Tools \
     gprof2dot \
     mock \
     vos \
-    pyvo \ 
+    pyvo \
     cadctap \
     BeautifulSoup4 \
     astroquery==0.4.6 \
