@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/ErikOsinga/science-containers/compare/v2.0.0...v2.0.1) (2026-02-05)
+
+
+### Bug Fixes
+
+* fix pymultinest installation ([0babf21](https://github.com/ErikOsinga/science-containers/commit/0babf2154974903b60c4c88fe42ba0059e44f527))
+
 ## [2.0.0](https://github.com/ErikOsinga/science-containers/compare/v1.17.0...v2.0.0) (2026-02-05)
 
 
