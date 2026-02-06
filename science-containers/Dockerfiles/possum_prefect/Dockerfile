@@ -1,4 +1,6 @@
-FROM prefecthq/prefect:3-python3.12-kubernetes
+FROM prefecthq/prefect:3.4.25-python3.12-kubernetes
+# see available versions at 
+# https://hub.docker.com/r/prefecthq/prefect/
 
 LABEL maintainer="Erik Osinga <erik.osinga@utoronto.ca>"
 
