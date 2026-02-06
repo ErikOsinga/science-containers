@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.2](https://github.com/ErikOsinga/science-containers/compare/v2.0.1...v2.0.2) (2026-02-06)
+
+
+### Bug Fixes
+
+* standardise on prefect 3.4.25 for now ([9850716](https://github.com/ErikOsinga/science-containers/commit/9850716881eac482646704e37de66db14a701df0))
+
 ## [2.0.1](https://github.com/ErikOsinga/science-containers/compare/v2.0.0...v2.0.1) (2026-02-05)
 
 
